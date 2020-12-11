@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+//import logo from "./logo.svg";
 import "./reset.css";
 import "./App.scss";
 import Search from "./components/Search";
@@ -37,7 +37,7 @@ function App() {
   function onDelete(position) {
     console.log(`trying to delete something in position ${position}`);
     const newTasks = item.filter((task, key) => {
-      return key != position;
+      return key !== position;
     });
     setItem(newTasks);
   }
